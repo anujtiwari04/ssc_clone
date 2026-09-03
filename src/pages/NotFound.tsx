@@ -8,9 +8,9 @@ export const NotFound: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#f8fafc] px-4 text-center">
       <div className="flex items-center gap-3 mb-6">
-        <IndiaEmblem size={48} />
+        <SscSeal size={48} />
         <div className="h-8 w-px bg-slate-300" />
-        <SscSeal size={44} />
+        <IndiaEmblem size={44} />
       </div>
 
       <div className="flex h-16 w-16 items-center justify-center rounded-full bg-maroon-50 text-maroon-800 mb-4 border border-maroon-200">

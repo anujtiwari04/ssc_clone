@@ -245,43 +245,49 @@ export const CandidateDashboard: React.FC = () => {
 
         {/* 6. Quick Action / Status Cards (2 Cards Side-by-Side) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {/* Card 1: Admission Certificate */}
-          <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow">
+          {/* Card 1: Admission Certificate (Clickable redirect to status page) */}
+          <Link
+            to="/candidate/admission-certificate-status"
+            className="block group rounded-xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:shadow-md hover:border-[#8b2332]/40 transition-all cursor-pointer"
+          >
             <div className="p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100">
+                <div className="h-10 w-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center border border-blue-100 group-hover:scale-105 transition-transform">
                   <FileCheck className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-bold text-slate-900">
+                <span className="text-sm font-bold text-slate-900 group-hover:text-[#8b2332] transition-colors">
                   Admission Certificate
                 </span>
               </div>
-              <ChevronRight className="h-5 w-5 text-slate-400" />
+              <ChevronRight className="h-5 w-5 text-slate-400 group-hover:translate-x-1 group-hover:text-[#8b2332] transition-all" />
             </div>
             {/* Green Notification Strip */}
             <div className="bg-[#00a82d] text-white text-xs font-semibold py-2 px-4 text-center">
               CHT 2026 &amp; Stenographer Grade 'C' and 'D' 2026 Admission Certificate(Know Your City) is live!
             </div>
-          </div>
+          </Link>
 
-          {/* Card 2: Result */}
-          <div className="rounded-xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:shadow-md transition-shadow">
+          {/* Card 2: Result (Clickable redirect to result status page) */}
+          <Link
+            to="/candidate/result-status"
+            className="block group rounded-xl border border-slate-200 bg-white overflow-hidden shadow-xs hover:shadow-md hover:border-[#8b2332]/40 transition-all cursor-pointer"
+          >
             <div className="p-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-100">
+                <div className="h-10 w-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-100 group-hover:scale-105 transition-transform">
                   <BarChart3 className="h-5 w-5" />
                 </div>
-                <span className="text-sm font-bold text-slate-900">
+                <span className="text-sm font-bold text-slate-900 group-hover:text-[#8b2332] transition-colors">
                   Result
                 </span>
               </div>
-              <ChevronRight className="h-5 w-5 text-slate-400" />
+              <ChevronRight className="h-5 w-5 text-slate-400 group-hover:translate-x-1 group-hover:text-[#8b2332] transition-all" />
             </div>
             {/* Green Notification Strip */}
             <div className="bg-[#00a82d] text-white text-xs font-semibold py-2 px-4 text-center">
               Result is available!
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* 7. Tabs & Filter Bar */}

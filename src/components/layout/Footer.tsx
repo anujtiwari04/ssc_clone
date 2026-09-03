@@ -11,9 +11,9 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand / Emblem & Description */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <IndiaEmblem size={44} className="text-amber-400 shrink-0" />
+              <SscSeal size={48} className="shrink-0" />
               <div className="h-8 w-px bg-slate-700" />
-              <SscSeal size={40} className="shrink-0 text-amber-300" />
+              <IndiaEmblem size={44} className="shrink-0 bg-white/10 p-1 rounded" />
               <div>
                 <h3 className="text-sm font-bold text-white leading-tight">
                   कर्मचारी चयन आयोग
